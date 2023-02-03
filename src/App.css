@@ -1,0 +1,113 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	height: 100vh;
+	align-items: center;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #dc4a49;
+}
+
+.container {
+	width: 30vw;
+	background-image: linear-gradient(to right, #ed8061, #eb625c, #e75450, #e64c4c);
+	box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.3);
+	color: white;
+	font-size: 1rem;
+	padding: 2rem;
+}
+
+.todo-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+	height: 90px;
+	font-size: 20px;
+	font-weight: 700;
+	border-bottom: #f49890 1px solid;
+}
+
+.input-value {
+	width: 75%;
+	border: none;
+	background-color: transparent;
+	color: white;
+	font-size: 1rem;
+}
+
+input::placeholder {
+	color: white;
+	font-size: 1.1rem;
+}
+
+input:focus::placeholder {
+	color: transparent;
+}
+
+.input-value:focus {
+	outline: none;
+}
+
+.add-btn {
+	background-color: transparent;
+	border: none;
+	color: white;
+	cursor: pointer;
+}
+
+.todo-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+}
+
+.todo-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 80px;
+	width: 100%;
+	border-bottom: #f49890 solid 1px;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.todo-btns {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.done-btn {
+	background-color: transparent;
+	border: none;
+	font-weight: 900;
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.del-btn {
+	background: transparent;
+	border: none;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.del-icon:hover {
+	transform: scale(1.15);
+}
+
+.done-icon:hover {
+	transform: scale(1.15);
+}
+
+.active {
+	opacity: 0.3;
+}
